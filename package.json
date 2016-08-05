@@ -1,0 +1,21 @@
+{
+  "name": "chrome-to-firefox-translation",
+  "version": "1.0.0",
+  "description": "This is a gulp task that changes chrome locales to firefox locales",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "localisation",
+    "firefox",
+    "chrome"
+  ],
+  "author": "Kolya Opahle <kolyaopahle@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-flatten": "^0.3.0",
+    "properties-reader": "0.0.15",
+    "through2": "^2.0.1"
+  }
+}
