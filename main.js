@@ -23,15 +23,15 @@ function ChromeToFirefoxTranslatorPlugin(file, encoding, done) {
 
         for (var key in jsonInput) {
             var value = jsonInput[key];
-        
+
             output += key + "=" + value.message + "\n";
         }
 
         file.contents = new Buffer(output);
 
         var parts = path.dirname(file.path).split('\\');
-        
-		file.path = file.path.replace(path.extname(file.path), '.properties');
+
+        file.path = file.path.replace(path.extname(file.path), '.properties');
 
         file.path = file.path.replace(path.basename(file.path, '.properties'), parts[parts.length - 1]);
 
